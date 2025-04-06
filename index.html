@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>叶逸尘的个人网站</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <style>
+        .font-cute {
+            font-family: 'ZCOOL KuaiLe', cursive;
+        }
+        .font-title {
+            font-family: 'Ma Shan Zheng', cursive;
+        }
+        body {
+            background-color: #f0f9ff;
+            background-image: url('https://images.unsplash.com/photo-1557682250-75678f41d4a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1829&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="bg-white/90 min-h-screen">
+        <!-- 导航栏 -->
+        <nav class="bg-blue-500 text-white p-4 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="index.html" class="font-title text-3xl hover:text-yellow-300 transition duration-300">叶逸尘</a>
+                <div class="space-x-4 font-cute">
+                    <a href="index.html" class="hover:text-yellow-300 transition duration-300">首页</a>
+                    <a href="hobbies.html" class="hover:text-yellow-300 transition duration-300">我的爱好</a>
+                    <a href="achievements.html" class="hover:text-yellow-300 transition duration-300">我的成就</a>
+                    <a href="education.html" class="hover:text-yellow-300 transition duration-300">教育经历</a>
+                    <a href="books.html" class="hover:text-yellow-300 transition duration-300">阅读清单</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 主要内容 -->
+        <div class="container mx-auto p-8">
+            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto border-4 border-blue-400">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-40 h-40 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-yellow-400 shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1588454012187-2860f2939a8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80" alt="小男孩形象照" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1">
+                        <h1 class="font-title text-4xl md:text-5xl text-blue-600 mb-4">你好，我是叶逸尘！</h1>
+                        <p class="font-cute text-lg text-gray-700 mb-6">
+                            我是一名来自中国湖州市的三年级小学生，就读于新风小学。我喜欢游泳、编程、唱歌、机器人和滑板！
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-cute">游泳健将</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full font-cute">小小程序员</span>
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full font-cute">歌唱能手</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full font-cute">机器人爱好者</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-cute">滑板新手</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 bg-blue-50 p-6 rounded-xl border-2 border-blue-200">
+                    <h2 class="font-title text-3xl text-blue-700 mb-4">个人简介</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 font-cute">
+                        <div class="bg-white p-4 rounded-lg shadow flex items-center space-x-4">
+                            <div class="bg-blue-100 p-3 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500">身高</div>
+                                <div class="text-lg">131cm</div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow flex items-center space-x-4">
+                            <div class="bg-green-100 p-3 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500">体重</div>
+                                <div class="text-lg">25kg</div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow flex items-center space-x-4">
+                            <div class="bg-indigo-100 p-3 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500">视力</div>
+                                <div class="text-lg">左眼4.7，右眼4.5</div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow flex items-center space-x-4">
+                            <div class="bg-red-100 p-3 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500">肺活量</div>
+                                <div class="text-lg">1609</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <a href="hobbies.html" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-white font-cute text-lg px-6 py-3 rounded-full shadow-lg transform transition hover:scale-105 duration-300">
+                        了解我的爱好 →
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="bg-blue-600 text-white p-6 mt-12">
+            <div class="container mx-auto text-center font-cute">
+                <p>© 2023 叶逸尘的个人网站</p>
+                <p class="mt-2">湖州市新风小学 三年级</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 

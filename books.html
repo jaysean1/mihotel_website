@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阅读清单 - 叶逸尘的个人网站</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <style>
+        .font-cute {
+            font-family: 'ZCOOL KuaiLe', cursive;
+        }
+        .font-title {
+            font-family: 'Ma Shan Zheng', cursive;
+        }
+        body {
+            background-color: #f0f9ff;
+            background-image: url('https://images.unsplash.com/photo-1557682250-75678f41d4a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1829&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .book {
+            transition: all 0.3s ease;
+        }
+        .book:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="bg-white/90 min-h-screen">
+        <!-- 导航栏 -->
+        <nav class="bg-blue-500 text-white p-4 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="index.html" class="font-title text-3xl hover:text-yellow-300 transition duration-300">叶逸尘</a>
+                <div class="space-x-4 font-cute">
+                    <a href="index.html" class="hover:text-yellow-300 transition duration-300">首页</a>
+                    <a href="hobbies.html" class="hover:text-yellow-300 transition duration-300">我的爱好</a>
+                    <a href="achievements.html" class="hover:text-yellow-300 transition duration-300">我的成就</a>
+                    <a href="education.html" class="hover:text-yellow-300 transition duration-300">教育经历</a>
+                    <a href="books.html" class="hover:text-yellow-300 transition duration-300 font-bold">阅读清单</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 主要内容 -->
+        <div class="container mx-auto p-8">
+            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto border-4 border-purple-400">
+                <div class="text-center mb-12">
+                    <h1 class="font-title text-4xl text-purple-600 mb-4">我的阅读世界</h1>
+                    <p class="font-cute text-lg text-gray-600">这些是我最喜欢的书籍</p>
+                </div>
+
+                <!-- 书本图标 -->
+                <div class="flex justify-center mb-8">
+                    <div class="bg-purple-100 p-5 rounded-full shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- 书籍列表 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- 特种兵学校 -->
+                    <div class="book bg-red-50 rounded-xl shadow-md overflow-hidden border-2 border-red-200">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1526297003708-f5a1c2c9c6e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="特种兵学校" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-title text-2xl text-red-700 mb-2">《特种兵学校》</h3>
+                            <p class="font-cute text-gray-700">
+                                这本书讲述了少年特种兵学校的训练生活，学生们在学校接受各种特种技能的训练，还要完成各种任务。这本书既有紧张刺激的冒险，也有真挚感人的友情。
+                            </p>
+                            <div class="mt-4">
+                                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full font-cute">冒险</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-cute">友情</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 华夏历险记 -->
+                    <div class="book bg-blue-50 rounded-xl shadow-md overflow-hidden border-2 border-blue-200">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1566455723354-c8530981fa6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="华夏历险记" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-title text-2xl text-blue-700 mb-2">《华夏历险记》</h3>
+                            <p class="font-cute text-gray-700">
+                                这本书带领读者穿越中国历史，探索中华文明的奥秘。主人公通过穿越时空，亲历了中国历史上的重要事件，了解了中华文化的博大精深。
+                            </p>
+                            <div class="mt-4">
+                                <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-cute">历史</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full font-cute">文化</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 中国古代寓言 -->
+                    <div class="book bg-green-50 rounded-xl shadow-md overflow-hidden border-2 border-green-200">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="中国古代寓言" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-title text-2xl text-green-700 mb-2">《中国古代寓言》</h3>
+                            <p class="font-cute text-gray-700">
+                                这本书收集了许多中国古代寓言故事，如"守株待兔"、"刻舟求剑"、"愚公移山"等。这些寓言故事生动有趣，蕴含深刻的人生哲理。
+                            </p>
+                            <div class="mt-4">
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full font-cute">智慧</span>
+                                <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full font-cute">哲理</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 阅读感受 -->
+                <div class="mt-12 bg-yellow-50 p-6 rounded-xl border-2 border-yellow-200 shadow-md">
+                    <h3 class="font-title text-2xl text-yellow-700 mb-4 text-center">我的阅读感受</h3>
+                    <p class="font-cute text-lg text-center text-gray-700">
+                        "书籍是人类进步的阶梯。我喜欢通过阅读来了解不同的世界，学习新的知识。每本书都给我带来了不同的体验和感受。"
+                    </p>
+                </div>
+
+                <div class="mt-12 flex justify-between">
+                    <a href="education.html" class="inline-block bg-gray-400 hover:bg-gray-500 text-white font-cute text-lg px-6 py-3 rounded-full shadow-lg transform transition hover:scale-105 duration-300">
+                        ← 返回教育经历
+                    </a>
+                    <a href="index.html" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-white font-cute text-lg px-6 py-3 rounded-full shadow-lg transform transition hover:scale-105 duration-300">
+                        返回首页 →
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="bg-blue-600 text-white p-6 mt-12">
+            <div class="container mx-auto text-center font-cute">
+                <p>© 2023 叶逸尘的个人网站</p>
+                <p class="mt-2">湖州市新风小学 三年级</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 

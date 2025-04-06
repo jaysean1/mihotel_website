@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教育经历 - 叶逸尘的个人网站</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <style>
+        .font-cute {
+            font-family: 'ZCOOL KuaiLe', cursive;
+        }
+        .font-title {
+            font-family: 'Ma Shan Zheng', cursive;
+        }
+        body {
+            background-color: #f0f9ff;
+            background-image: url('https://images.unsplash.com/photo-1557682250-75678f41d4a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1829&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .timeline-container {
+            position: relative;
+        }
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #2563eb;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 10px;
+        }
+        .timeline-item {
+            position: relative;
+            width: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -12px;
+            top: 20px;
+            border-radius: 50%;
+            z-index: 1;
+            background: #fff;
+            border: 4px solid #3b82f6;
+        }
+        .timeline-item.left {
+            left: 0;
+            padding-right: 40px;
+        }
+        .timeline-item.right {
+            left: 50%;
+            padding-left: 40px;
+        }
+        .timeline-item.right::after {
+            left: -12px;
+        }
+        @media screen and (max-width: 768px) {
+            .timeline-container::after {
+                left: 31px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-item.left, .timeline-item.right {
+                left: 0;
+            }
+            .timeline-item.left::after, .timeline-item.right::after {
+                left: 18px;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="bg-white/90 min-h-screen">
+        <!-- 导航栏 -->
+        <nav class="bg-blue-500 text-white p-4 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="index.html" class="font-title text-3xl hover:text-yellow-300 transition duration-300">叶逸尘</a>
+                <div class="space-x-4 font-cute">
+                    <a href="index.html" class="hover:text-yellow-300 transition duration-300">首页</a>
+                    <a href="hobbies.html" class="hover:text-yellow-300 transition duration-300">我的爱好</a>
+                    <a href="achievements.html" class="hover:text-yellow-300 transition duration-300">我的成就</a>
+                    <a href="education.html" class="hover:text-yellow-300 transition duration-300 font-bold">教育经历</a>
+                    <a href="books.html" class="hover:text-yellow-300 transition duration-300">阅读清单</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 主要内容 -->
+        <div class="container mx-auto p-8">
+            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto border-4 border-green-400">
+                <div class="text-center mb-12">
+                    <h1 class="font-title text-4xl text-green-600 mb-4">我的学习旅程</h1>
+                    <p class="font-cute text-lg text-gray-600">从幼儿园到小学的成长历程</p>
+                </div>
+
+                <!-- 学校图标 -->
+                <div class="flex justify-center mb-8">
+                    <div class="bg-green-100 p-5 rounded-full shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- 时间线 -->
+                <div class="timeline-container py-8 mt-6">
+                    <!-- 幼儿园 -->
+                    <div class="timeline-item left mb-12">
+                        <div class="bg-blue-50 p-6 rounded-xl shadow-md border-2 border-blue-200">
+                            <h2 class="font-title text-3xl text-blue-700 mb-2">实验幼儿园</h2>
+                            <div class="font-cute text-sm text-gray-500 mb-4">2020 ~ 2023</div>
+                            <div class="flex mb-6">
+                                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1122&q=80" alt="幼儿园" class="w-full h-40 object-cover rounded-lg shadow">
+                            </div>
+                            <p class="font-cute text-lg text-gray-700">
+                                我在实验幼儿园度过了快乐的幼儿时光。在那里，我学会了基本的生活技能，交到了许多好朋友，还参加了各种有趣的活动。
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-cute">学唱歌</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full font-cute">学绘画</span>
+                                <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-cute">做游戏</span>
+                                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full font-cute">朗诵儿歌</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 小学 -->
+                    <div class="timeline-item right">
+                        <div class="bg-green-50 p-6 rounded-xl shadow-md border-2 border-green-200">
+                            <h2 class="font-title text-3xl text-green-700 mb-2">新风小学</h2>
+                            <div class="font-cute text-sm text-gray-500 mb-4">2023 ~ 2025</div>
+                            <div class="flex mb-6">
+                                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" alt="小学" class="w-full h-40 object-cover rounded-lg shadow">
+                            </div>
+                            <p class="font-cute text-lg text-gray-700">
+                                我现在在湖州市新风小学读三年级。在这里，我学习了许多知识，参加了游泳队，还获得了很多学习奖项，比如优秀班干部、三好学生和银杏少年。
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-cute">数学</span>
+                                <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full font-cute">语文</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full font-cute">英语</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-cute">游泳</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full font-cute">编程</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 校训 -->
+                <div class="mt-6 bg-yellow-50 p-6 rounded-xl border-2 border-yellow-200 shadow-md">
+                    <h3 class="font-title text-2xl text-yellow-700 mb-4 text-center">我的学校座右铭</h3>
+                    <p class="font-cute text-xl text-center text-gray-700">
+                        "好好学习，天天向上！做一个德智体美劳全面发展的好学生！"
+                    </p>
+                </div>
+
+                <div class="mt-12 flex justify-between">
+                    <a href="achievements.html" class="inline-block bg-gray-400 hover:bg-gray-500 text-white font-cute text-lg px-6 py-3 rounded-full shadow-lg transform transition hover:scale-105 duration-300">
+                        ← 返回成就
+                    </a>
+                    <a href="books.html" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-white font-cute text-lg px-6 py-3 rounded-full shadow-lg transform transition hover:scale-105 duration-300">
+                        查看阅读清单 →
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="bg-blue-600 text-white p-6 mt-12">
+            <div class="container mx-auto text-center font-cute">
+                <p>© 2023 叶逸尘的个人网站</p>
+                <p class="mt-2">湖州市新风小学 三年级</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 
